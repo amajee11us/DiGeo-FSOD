@@ -36,6 +36,11 @@ If you find this repository useful for your publications, please consider citing
 ## Instillation
 
 Our code is developped based upon [TFA](https://github.com/ucbdrive/few-shot-object-detection) and please follow their instructions for library (pytorch, detectron2) installization and dataset preparation.
+Following steps can be followed to achieve the optimal result (based on author suggestions) :
+- Install pillow for image processing : ```pip install pillow=9.1.0```
+- Installing Detectron2 : ```python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html```
+- ```conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge```
+- ```pip install setuptools==59.5.0```
 - For the library/package used for running the code, the repo has been verified on Pytorch 1.7~1.10. For the instillation of detectron2, we install the pre-compiled version following the instructions [here](https://detectron2.readthedocs.io/en/latest/tutorials/install.html).
 - For the dataset preparation, we would recommend to organize the data in a shared storage server in your own GPU clusters (if applicable) and then crerate a soft link towards the root with the destination as 'datasets'.
 
