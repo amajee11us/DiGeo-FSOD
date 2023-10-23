@@ -6,8 +6,9 @@ termcolor
 yacs
 tabulate
 cloudpickle
-Pillow
+pillow==9.1.0
 imagesize
 tensorboard
 opencv-python
 lvis
+setuptools==59.5.0
